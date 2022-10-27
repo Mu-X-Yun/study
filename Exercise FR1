@@ -1,5 +1,5 @@
-//����һ�������ݹ����ϰ��
-//����һ������ֵ���޷��ţ�������˳���ӡ����ÿһλ��
+//这是一个函数递归的练习。
+//接受一个整型值（无符号），按照顺序打印它的每一位。
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 #include <math.h>
