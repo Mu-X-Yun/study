@@ -1,5 +1,5 @@
-//��������ҵ�һ����ϰ�⡣
-//��д���룬��ʾ����ַ��������Ƶ������м��ۡ�
+//这是随便找的一道条件与循环练习题。
+//编写代码，演示多个字符从两端移到，向中间汇聚。
 #include <stdio.h>
 #include <string.h>
 #include <windows.h>
