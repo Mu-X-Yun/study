@@ -1,12 +1,12 @@
-//ÕâÊÇËæ±ãÕÒµÄÒ»µÀÁ·Ï°Ìâ¡£
-//ÔÚÒ»¸öÓĞĞòÊı×éÖĞ²éÕÒ¾ßÌåÄ³¸öÊı×Ön£¬±àĞ´int binsearch(int x,int v[],int n);¹¦ÄÜ£ºÔÚv[0]<=v[1]<=v[2]<=......<=v[n-1]µÄÊı×éÖĞ²éÕÒx¡£
+//è¿™æ˜¯éšä¾¿æ‰¾çš„ä¸€é“æ¡ä»¶ä¸å¾ªç¯ç»ƒä¹ é¢˜ã€‚
+//åœ¨ä¸€ä¸ªæœ‰åºæ•°ç»„ä¸­æŸ¥æ‰¾å…·ä½“æŸä¸ªæ•°å­—nï¼Œç¼–å†™int binsearch(int x,int v[],int n);åŠŸèƒ½ï¼šåœ¨v[0]<=v[1]<=v[2]<=......<=v[n-1]çš„æ•°ç»„ä¸­æŸ¥æ‰¾xã€‚
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 void main()
 {
 	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
 	int l = 0, r = sizeof(arr) / sizeof(arr[0]) - 1, a = 0, i = 0;
-	printf("ÇëÊäÈëÒªÕÒµÄÊı£º");
+	printf("è¯·è¾“å…¥è¦æ‰¾çš„æ•°ï¼š");
 	scanf("%d", &i);
 	while (1)
 	{
@@ -15,12 +15,12 @@ void main()
 		else if (arr[a] < i)l = a + 1;
 		else
 		{
-			printf("%dµÄÏÂ±êÎª%d\n", i, a);
+			printf("%dçš„ä¸‹æ ‡ä¸º%d\n", i, a);
 			break;
 		}
 		if (l > r)
 		{
-			printf("ÕÒ²»µ½\n");
+			printf("æ‰¾ä¸åˆ°\n");
 			break;
 		}
 	}
