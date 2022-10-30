@@ -4,19 +4,18 @@ void game()
 {
 	char arr[R][C] = { 0 };
 	system("cls");
-	ini(arr, R, C);//³õÊ¼»¯
-	print(arr, R, C);//ÏÔÊ¾ÆåÅÌ
+	ini(arr, R, C);//åˆå§‹åŒ–
+	print(arr, R, C);//æ˜¾ç¤ºæ£‹ç›˜
 	while (1)
 	{
-		pm(arr, R, C);//Íæ¼ÒÏÂÆå
+		pm(arr, R, C);//ç©å®¶ä¸‹æ£‹
 		system("cls");
 		print(arr, R, C);
-		cm(arr, R, C);//µçÄÔÏÂÆå
+		cm(arr, R, C);//ç”µè„‘ä¸‹æ£‹
 		system("cls");
 		print(arr, R, C);
 		break;
 	}
-
 }
 void menu()
 {
@@ -24,16 +23,16 @@ void menu()
 	for (; i != 0;)
 	{
 		printf("/------------------------------\\\n");
-		printf("|       ÄãÏëÔÙÀ´Ò»´ÎÂğ£¿       |\n");
-		printf("|      1.ÊÇµÄ      0.²»ÊÇ      |\n");
+		printf("|       ä½ æƒ³å†æ¥ä¸€æ¬¡å—ï¼Ÿ       |\n");
+		printf("|      1.æ˜¯çš„      0.ä¸æ˜¯      |\n");
 		printf("\\------------------------------/\n");
-		printf("ÇëÑ¡Ôñ>");
+		printf("è¯·é€‰æ‹©>");
 		scanf("%d", &i);
 		switch (i)
 		{
 		case 1:game(); break;
 		case 0:break;
-		default:printf("ÇëÊäÈë1»ò0£¡\n"); menu();
+		default:printf("è¯·è¾“å…¥1æˆ–0ï¼\n"); menu();
 		}
 	}
 }
@@ -41,8 +40,8 @@ void welcome()
 {
 	int i = 0;
 	printf("*** Tic-Tac-Toe ***\n");
-	printf("***   ¾®×ÖÆå    ***\n");
-	printf("ÊäÈëÈÎÒâ¼ü¿ªÊ¼£º");
+	printf("***   äº•å­—æ£‹    ***\n");
+	printf("è¾“å…¥ä»»æ„é”®å¼€å§‹ï¼š");
 	scanf("%d",&i);
 }
 int main()
