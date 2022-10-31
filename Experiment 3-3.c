@@ -3,9 +3,9 @@
 void main()
 {
 	char c;
-	printf("请输入小写字母：");
+	printf("璇疯緭鍏ュ皬鍐欏瓧姣嶏細");
 	c = getchar();
 	c -= 32;
-	printf("它的大写字母是：");
+	printf("瀹冪殑澶у啓瀛楁瘝鏄細");
 	putchar(c);
 }
