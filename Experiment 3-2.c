@@ -16,6 +16,6 @@ void main()
 	p = 32768; q = 40000;
 	printf("a=%d,b=%d\nc1=%c,c2=%c\n", a, b, c1, c2);
 	printf("d=%6.2f,e=%6.2f\n", d, e);
-	printf("f=%15.6f,g=%12.10f\n", f, g);
+	printf("f=%15.6f,g=%15.10f\n", f, g);
 	printf("m=%ld,n=%ld\np=%u,q=%u\n", m, n, p, q);
 }
