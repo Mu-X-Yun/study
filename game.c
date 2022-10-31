@@ -36,18 +36,46 @@ void pm(char arr[R][C],int r,int c)
 	int i = 0, j = 0;
 	while (1)
 	{
-		printf("请输入下的坐标：");
+		printf("璇疯緭鍏ヤ笅鐨勫潗鏍囷細");
 		scanf("%d%d", &i, &j);
 		if (i >= 1 && i <= r && j >= 1 && j <= c)
 		{
 			if (arr[i - 1][j - 1] == ' ')break;
-			else("该坐标已有棋子！");
+			else printf("璇ュ潗鏍囧凡鏈夋瀛愶紒\n");
 		}
-		else printf("错误的坐标！\n");
+		else printf("閿欒鐨勫潗鏍囷紒\n");
 	}
 	arr[i-1][j-1] = '*';
 }
 void cm(char arr[R][C], int r, int c)
 {
-
+	int i = 0, j = 0;
+	srand((unsigned int)time(NULL));
+	while (1)
+	{
+		i = rand() % r;
+		j = rand() % c;
+		if (arr[i][j] == ' ')break;
+	}
+	arr[i][j] = 'o';
+}
+int judge(char arr[R][C], int r, int c, char m)
+{
+	int i = 0, j = 0, a = 0, b = 0;
+	for (i = 0; i < R; i++)
+	{
+		for (j = 0, a = 0, b = 0; j < C; j++)
+		{
+			if (arr[i][j] == m)a++;
+			if (arr[j][i] == m)b++;
+		}
+		if (a == R || b == R)return 1;
+	}
+	for (a = 0, b = 0, i = 0, j = 0; i < R && j < C; i++, j++)
+	{
+		if (arr[i][j] == m)a++;
+		if (arr[i][R - 1 - j] == m)b++;
+	}
+	if (a == R || b == R)return 1;
+	else return 0;
 }
