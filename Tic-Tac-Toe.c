@@ -1,3 +1,4 @@
+//这是一个井字棋游戏的主源文件。
 #define _CRT_SECURE_NO_WARNINGS 1
 #include "game.h"
 void game();
