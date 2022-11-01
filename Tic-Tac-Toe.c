@@ -5,7 +5,7 @@ void game();
 void menu()
 {
 	int i = 1;
-	for (; i != 0;)
+	while(1)
 	{
 		printf("/------------------------------\\\n");
 		printf("|       你想再来一次吗？       |\n");
@@ -13,12 +13,13 @@ void menu()
 		printf("\\------------------------------/\n");
 		printf("请选择>");
 		scanf("%d", &i);
-		switch (i)
+		if (i == 1)
 		{
-		case 1:game(); break;
-		case 0:break;
-		default:printf("请输入1或0！\n");
+			game();
+			break;
 		}
+		else if (i == 0)break;
+		else printf("请输入1或0！\n");
 	}
 }
 void game()
