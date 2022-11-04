@@ -1,21 +1,21 @@
-//ÇóÁ½¸ö¾ØÕóµÄ³Ë»ı
+//æ±‚ä¸¤ä¸ªçŸ©é˜µçš„ä¹˜ç§¯
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
-#define m 2//¾ØÕóAµÄĞĞÊı
-#define s 3//¾ØÕóAµÄÁĞÊıºÍ¾ØÕóBµÄĞĞÊı
-#define n 2//¾ØÕóBµÄÁĞÊı
+#define m 2//çŸ©é˜µAçš„è¡Œæ•°
+#define s 3//çŸ©é˜µAçš„åˆ—æ•°å’ŒçŸ©é˜µBçš„è¡Œæ•°
+#define n 2//çŸ©é˜µBçš„åˆ—æ•°
 void main()
 {
     int i1 = 0, j1 = 0, i2 = 0, j2 = 0, i = 0, j = 0;
     int A[m][s] = { 0 };
     int B[s][n] = { 0 };
     int C[m][n] = { 0 };
-    printf("ÇëÊäÈë%dĞĞ%dÁĞ¾ØÕóA£º\n", m, s);
+    printf("è¯·è¾“å…¥%dè¡Œ%dåˆ—çŸ©é˜µAï¼š\n", m, s);
     for (i = 0; i < m; i++)
     {
         for (j = 0; j < s; j++)scanf("%d", &A[i][j]);
     }
-    printf("ÇëÔÙÊäÈë%dĞĞ%dÁĞ¾ØÕóB£º\n", s, n);
+    printf("è¯·å†è¾“å…¥%dè¡Œ%dåˆ—çŸ©é˜µBï¼š\n", s, n);
     for (i = 0; i < s; i++)
     {
         for (j = 0; j < n; j++)scanf("%d", &B[i][j]);
