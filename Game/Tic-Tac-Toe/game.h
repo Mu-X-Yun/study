@@ -1,5 +1,5 @@
-#define R 3
-#define C 3
+#define R 3//行数
+#define C 3//列数
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
