@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include "game.h"
-void ini(char arr[R][C], int r, int c)
+void ini(char arr[R][C], int r, int c)//åˆå§‹åŒ–æ£‹ç›˜
 {
 	int i = 0, j = 0;
 	for (i = 0; i < r; i++) 
@@ -8,7 +8,7 @@ void ini(char arr[R][C], int r, int c)
 		for (j = 0; j < c; j++)arr[i][j] = ' ';
 	}
 }
-void print(char arr[R][C], int r, int c)
+void print(char arr[R][C], int r, int c)//æ‰“å°æ£‹ç›˜
 {
 	int i = 0, j = 0, m = 0, n = 0;
 	printf(" ");
@@ -31,23 +31,23 @@ void print(char arr[R][C], int r, int c)
 	for (j = 0; j < c-1; j++)printf("----");
 	printf("---/\n");
 }
-void pm(char arr[R][C],int r,int c)
+void pm(char arr[R][C],int r,int c)//ç©å®¶è¡ŒåŠ¨
 {
 	int i = 0, j = 0;
 	while (1)
 	{
-		printf("ÇëÊäÈëÏÂµÄ×ø±ê£º");
+		printf("è¯·è¾“å…¥ä¸‹çš„åæ ‡ï¼š");
 		scanf("%d%d", &i, &j);
 		if (i >= 1 && i <= r && j >= 1 && j <= c)
 		{
 			if (arr[i - 1][j - 1] == ' ')break;
-			else printf("¸Ã×ø±êÒÑÓĞÆå×Ó£¡\n");
+			else printf("è¯¥åæ ‡å·²æœ‰æ£‹å­ï¼\n");
 		}
-		else printf("´íÎóµÄ×ø±ê£¡\n");
+		else printf("é”™è¯¯çš„åæ ‡ï¼\n");
 	}
 	arr[i-1][j-1] = '*';
 }
-void cm(char arr[R][C], int r, int c)
+void cm(char arr[R][C], int r, int c)//ç”µè„‘è¡ŒåŠ¨
 {
 	int i = 0, j = 0;
 	srand((unsigned int)time(NULL));
@@ -59,7 +59,7 @@ void cm(char arr[R][C], int r, int c)
 	}
 	arr[i][j] = 'o';
 }
-int judge(char arr[R][C], int r, int c, char m)
+int judge(char arr[R][C], int r, int c, char m)//åˆ¤æ–­èƒœè´Ÿ
 {
 	int i = 0, j = 0, a = 0, b = 0;
 	for (i = 0; i < R; i++)
@@ -79,4 +79,3 @@ int judge(char arr[R][C], int r, int c, char m)
 	if (a == R || b == R)return 1;
 	else return 0;
 }
-//ÎÊÌâ£º½áÊøÅĞ¶Ï
