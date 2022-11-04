@@ -1,5 +1,5 @@
-//���Ǻ����ݹ��һ����ϰ�⡣
-//��n�Ľ׳ˣ��������������
+//这是函数递归的一道练习题。
+//求n的阶乘（不考虑溢出）。
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 int Factorial(int n)
