@@ -1,5 +1,5 @@
-//ÕâÊÇÒ»¸öº¯ÊýµÝ¹éµÄÁ·Ï°Ìâ
-//±àÐ´º¯Êý²»ÔÊÐí´´½¨ÁÙÊ±±äÁ¿£¬Çó×Ö·û´®µÄ³¤¶È
+//è¿™æ˜¯ä¸€ä¸ªå‡½æ•°é€’å½’çš„ç»ƒä¹ é¢˜
+//ç¼–å†™å‡½æ•°ä¸å…è®¸åˆ›å»ºä¸´æ—¶å˜é‡ï¼Œæ±‚å­—ç¬¦ä¸²çš„é•¿åº¦
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 int my_strlen(char* len)
