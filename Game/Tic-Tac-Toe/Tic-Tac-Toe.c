@@ -1,16 +1,16 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include "game.h"
 void game();
-void menu()
+void menu()//ç»“æŸèœå•
 {
 	int i = 1;
 	while(1)
 	{
 		printf("/------------------------------\\\n");
-		printf("|       ÄãÏëÔÙÀ´Ò»´ÎÂğ£¿       |\n");
-		printf("|      1.ÊÇµÄ      0.²»ÊÇ      |\n");
+		printf("|       ä½ æƒ³å†æ¥ä¸€æ¬¡å—ï¼Ÿ       |\n");
+		printf("|      1.æ˜¯çš„      0.ä¸æ˜¯      |\n");
 		printf("\\------------------------------/\n");
-		printf("ÇëÑ¡Ôñ>");
+		printf("è¯·é€‰æ‹©>");
 		scanf("%d", &i);
 		if (i == 1)
 		{
@@ -18,43 +18,43 @@ void menu()
 			break;
 		}
 		else if (i == 0)break;
-		else printf("ÇëÊäÈë1»ò0£¡\n");
+		else printf("è¯·è¾“å…¥1æˆ–0ï¼\n");
 	}
 }
-void game()
+void game()//æ¸¸æˆä¸»ä½“
 {
 	char arr[R][C] = { 0 };
 	system("cls");
-	ini(arr, R, C);//³õÊ¼»¯
-	print(arr, R, C);//ÏÔÊ¾ÆåÅÌ
+	ini(arr, R, C);//åˆå§‹åŒ–
+	print(arr, R, C);//æ˜¾ç¤ºæ£‹ç›˜
 	while (1)
 	{
-		pm(arr, R, C);//Íæ¼ÒÏÂÆå
+		pm(arr, R, C);//ç©å®¶ä¸‹æ£‹
 		system("cls");
 		print(arr, R, C);
-		cm(arr, R, C);//µçÄÔÏÂÆå
+		cm(arr, R, C);//ç”µè„‘ä¸‹æ£‹
 		system("cls");
 		print(arr, R, C);
 		if (judge(arr, R, C, '*'))
 		{
-			printf("Íæ¼ÒÊ¤Àû\n");
+			printf("ç©å®¶èƒœåˆ©\n");
 			break;
 		}
 		else if (judge(arr, R, C, 'o'))
 		{
-			printf("µçÄÔÊ¤Àû\n");
+			printf("ç”µè„‘èƒœåˆ©\n");
 			break;
 		}
 	}
 	menu();
 }
-void welcome()
+void welcome()//å¼€å§‹èœå•
 {
 	int i = 0;
 	printf("/--------------\\\n");
 	printf("|  Tic-Tac-Toe |\n");
-	printf("|    ¾®×ÖÆå    |\n");
-	printf("|ÊäÈëÈÎÒâ¼ü¿ªÊ¼|\n");
+	printf("|    äº•å­—æ£‹    |\n");
+	printf("|è¾“å…¥ä»»æ„é”®å¼€å§‹|\n");
 	printf("\\--------------/\n");
 	scanf("%d",&i);
 }
