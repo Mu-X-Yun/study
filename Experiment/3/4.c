@@ -3,7 +3,7 @@
 void main()
 {
 	int a, b, c, x, y;
-	printf("请输入一个三位的整数:");
+	printf("脟毛脢盲脠毛脪禄赂枚脠媒脦禄碌脛脮没脢媒:");
 	scanf("%d", &x);
 	a = x / 100;
 	b = x % 100 / 10;
