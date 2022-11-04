@@ -1,11 +1,11 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include "game.h"
-void ini(char arr[R][C])//初始化棋盘
+void ini(char arr[R][C], int r, int c)//初始化棋盘
 {
 	int i = 0, j = 0;
-	for (i = 0; i < R; i++)
+	for (i = 0; i < r; i++)
 	{
-		for (j = 0; j < C; j++)arr[i][j] = ' ';
+		for (j = 0; j < c; j++)arr[i][j] = ' ';
 	}
 }
 void print(char arr[R][C], int r, int c)//打印棋盘
