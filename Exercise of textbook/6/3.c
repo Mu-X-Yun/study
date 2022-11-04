@@ -1,5 +1,5 @@
-//ÕâÊÇÄ³½Ì²ÄÉÏµÄµÚÁùÕÂµÄµÚÈýÌâ¡£
-//Çë±àÐ´Á½¸ö×Ô¶¨Òåº¯Êý£¬·Ö±ðÊµÏÖÇóÁ½¸öÕûÊýµÄ×î´ó¹«Ô¼ÊýºÍ×îÐ¡¹«±¶Êý¡£
+//è¿™æ˜¯æŸæ•™æä¸Šçš„ç¬¬å…­ç« çš„ç¬¬ä¸‰é¢˜ã€‚
+//è¯·ç¼–å†™ä¸¤ä¸ªè‡ªå®šä¹‰å‡½æ•°ï¼Œåˆ†åˆ«å®žçŽ°æ±‚ä¸¤ä¸ªæ•´æ•°çš„æœ€å¤§å…¬çº¦æ•°å’Œæœ€å°å…¬å€æ•°ã€‚
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 int GCD(int x, int y)
@@ -19,7 +19,7 @@ int LCM(int x, int y)
 void main()
 {
 	int a = 0, b = 0;
-	printf("ÇëÊäÈëÁ½¸öÕûÊý£º");
+	printf("è¯·è¾“å…¥ä¸¤ä¸ªæ•´æ•°ï¼š");
 	scanf("%d %d", &a, &b);
-	printf("ÕâÁ½¸öÕûÊýµÄ×î´ó¹«Ô¼ÊýÎª%d£¬×îÐ¡¹«±¶ÊýÎª%d\n", GCD(a, b), LCM(a, b));
+	printf("è¿™ä¸¤ä¸ªæ•´æ•°çš„æœ€å¤§å…¬çº¦æ•°ä¸º%dï¼Œæœ€å°å…¬å€æ•°ä¸º%d\n", GCD(a, b), LCM(a, b));
 }
