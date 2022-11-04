@@ -1,4 +1,4 @@
-//²»ÓÃÑ­»·ÇÒ½öÓÃ¼Ó·¨£¨sumº¯Êı£©Çó´Î·½
+//ä¸ç”¨å¾ªç¯ä¸”ä»…ç”¨åŠ æ³•ï¼ˆsumå‡½æ•°ï¼‰æ±‚æ¬¡æ–¹
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 int sum(int x,int y)
@@ -20,8 +20,8 @@ int power(int x,int y,int m,int n,int i)
 void main()
 {
     int x = 0, y = 0, m = 0, n = 0, i = 0;
-    printf("ÇëÊäÈëÁ½¸öÕûÊıx,y£º");
+    printf("è¯·è¾“å…¥ä¸¤ä¸ªæ•´æ•°x,yï¼š");
     scanf("%d%d", &x, &y);
     i = x;
-    printf("xµÄy´Î·½Îª£º%d", power(x, y, m, n, i));
+    printf("xçš„yæ¬¡æ–¹ä¸ºï¼š%d", power(x, y, m, n, i));
 }
