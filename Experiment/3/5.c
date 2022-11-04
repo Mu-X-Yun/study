@@ -4,10 +4,10 @@
 int main()
 {
 	float a, b, c, p, area;
-	printf("请输入三角形的三条边:");
+	printf("璇疯緭鍏ヤ笁瑙掑舰鐨勪笁鏉¤竟:");
 	scanf("%f %f %f", &a, &b, &c);
 	p = (a + b + c) / 2;
 	area = sqrt(p * (p - a) * (p - b) * (p - c));
-	printf("三角形的面积:%f\n", area);
+	printf("涓夎褰㈢殑闈㈢Н:%f\n", area);
 	return 0;
 }
