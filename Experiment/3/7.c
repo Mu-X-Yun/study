@@ -1,29 +1,29 @@
-////Ê¹ÓÃ±äÁ¿
+////ä½¿ç”¨å˜é‡
 //#define _CRT_SECURE_NO_WARNINGS 1
 //#include <stdio.h>
 //void main()
 //{
 //	int x, y, i;
-//	printf("ÇëÊäÈëÕûÊıx,y£º");
+//	printf("è¯·è¾“å…¥æ•´æ•°x,yï¼š");
 //	scanf("%d%d", &x, &y);
-//	printf("»¥»»Ç°x=%d£¬y=%d\n", x, y);
+//	printf("äº’æ¢å‰x=%dï¼Œy=%d\n", x, y);
 //	i = x;
 //	x = y;
 //	y = i;
-//	printf("»¥»»ºóx=%d£¬y=%d", x, y);
+//	printf("äº’æ¢åx=%dï¼Œy=%d", x, y);
 //}
 
-//²»Ê¹ÓÃ±äÁ¿
+//ä¸ä½¿ç”¨å˜é‡
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 void main()
 {
 	int x, y, i;
-	printf("ÇëÊäÈëÕûÊıx,y£º");
+	printf("è¯·è¾“å…¥æ•´æ•°x,yï¼š");
 	scanf("%d%d", &x, &y);
-	printf("»¥»»Ç°x=%d£¬y=%d\n", x, y);
+	printf("äº’æ¢å‰x=%dï¼Œy=%d\n", x, y);
 	x += y;
 	y = x - y;
 	x = x - y;
-	printf("»¥»»ºóx=%d£¬y=%d", x, y);
+	printf("äº’æ¢åx=%dï¼Œy=%d", x, y);
 }
