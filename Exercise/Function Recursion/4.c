@@ -1,5 +1,5 @@
-//ÕâÊÇº¯ÊýµÝ¹éµÄÒ»µÀÁ·Ï°Ìâ¡£
-//ÇóµÚn¸öì³²¨ÄÇÆõÊý¡£
+//è¿™æ˜¯å‡½æ•°é€’å½’çš„ä¸€é“ç»ƒä¹ é¢˜ã€‚
+//æ±‚ç¬¬nä¸ªæ–æ³¢é‚£å¥‘æ•°ã€‚
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 int F(int n)
