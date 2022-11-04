@@ -25,7 +25,7 @@ void game()//游戏主体
 {
 	char arr[R][C] = { 0 };
 	system("cls");
-	ini(arr, R, C);//初始化
+	ini(arr);//初始化
 	print(arr, R, C);//显示棋盘
 	while (1)
 	{
