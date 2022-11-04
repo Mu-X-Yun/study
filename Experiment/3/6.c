@@ -5,10 +5,10 @@
 void main()
 {
 	float r, h, l, s, v;
-	printf("请输入圆柱体的半径和高：");
+	printf("璇疯緭鍏ュ渾鏌变綋鐨勫崐寰勫拰楂橈細");
 	scanf("%f%f", &r, &h);
 	l = PI * r * 2;
 	s = PI * pow(r, 2);
 	v = s * h;
-	printf("圆的周长l=%f\n圆的面积s=%f\n圆柱体的体积v=%f", l, s, v);
+	printf("鍦嗙殑鍛ㄩ暱l=%f\n鍦嗙殑闈㈢Нs=%f\n鍦嗘煴浣撶殑浣撶Нv=%f", l, s, v);
 }
