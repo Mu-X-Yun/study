@@ -63,7 +63,7 @@ void A3()
 int main()
 {
 	int n = 0, i1 = 0;
-	printf("ÇëÊäÈëÔ²ÅÌÊı£¨²»³¬¹ı20£©£º");
+	printf("è¯·è¾“å…¥åœ†ç›˜æ•°ï¼ˆä¸è¶…è¿‡20ï¼‰ï¼š");
 	scanf("%d", &n);
 	for (i1 = 1; i1 <= n; i1++)arr1[i1] = i1;
 	Print(n);
@@ -72,7 +72,7 @@ int main()
 		for (i2 = 1; i2 < n ; i2++)A3();
 		i2 = n;
 		A3();
-		printf("µÚ%d²½£º\n", m-1);
+		printf("ç¬¬%dæ­¥ï¼š\n", m-1);
 		Print(n);
 	}
 }
@@ -86,7 +86,7 @@ int main()
 //int main()
 //{
 //	int n = 8;
-//	printf("ººÅµËşµÄ²ãÊı:\n");
+//	printf("æ±‰è¯ºå¡”çš„å±‚æ•°:\n");
 //	scanf(" %d", &n);
 //	Hanoi(n, 'A', 'B', 'C');
 //	Sleep(20000);
@@ -108,5 +108,5 @@ int main()
 //void Move(int n, char a, char b)
 //{
 //	count++;
-//	printf("µÚ%d´ÎÒÆ¶¯ Move %d: Move from %c to %c !\n", count, n, a, b);
+//	printf("ç¬¬%dæ¬¡ç§»åŠ¨ Move %d: Move from %c to %c !\n", count, n, a, b);
 //}
