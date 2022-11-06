@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
 int main()
 {
     int i = 0, n = 0, h1 = 0, m1 = 0, s1 = 0, u1 = 0, i1 = 0, h2 = 0, m2 = 0, s2 = 0, u2 = 0, i2 = 0, j = 0;
