@@ -1,14 +1,14 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include "game.h"
 int flag = 0;
-void ini(char MF[R][C])//³õÊ¼»¯À×Çø
+void ini(char MF[R][C])//åˆå§‹åŒ–é›·åŒº
 {
 	int i = 0, j = 0;
 	for (i = 0; i < R; i++)
 		for (j = 0; j < C; j++)
 			MF[i][j] = ' ';
 }
-void load(char HMF[R][C])//²¼À×
+void load(char HMF[R][C])//å¸ƒé›·
 {
 	int i = 0, j = 0, m = 0, n = 0, a = 0;
 	srand((unsigned int)time(NULL));
@@ -56,10 +56,10 @@ void load(char HMF[R][C])//²¼À×
 			}
 		}
 }
-void print(char MF[R][C])//´òÓ¡À×Çø
+void print(char MF[R][C])//æ‰“å°é›·åŒº
 {
 	int i = 0, j = 0, m = 0, n = 0;
-	printf("          À×Êı£º%d          ÆìÊı£º%d\n", M, M - flag);
+	printf("          é›·æ•°ï¼š%d          æ——æ•°ï¼š%d\n", M, M - flag);
 	printf("  ");
 	for (n = 1; n <= C; n++)
 		printf("%4d", n);
@@ -124,13 +124,13 @@ void chain1(char HMF[R][C], char DMF[R][C])
 					if (DMF[i][j] == '0')
 						chain2(HMF, DMF, i, j);
 }
-int play(char HMF[R][C], char DMF[R][C])//Íæ¼ÒÉ¨À×
+int play(char HMF[R][C], char DMF[R][C])//ç©å®¶æ‰«é›·
 {
 	int i = 0, j = 0, a = 0;
 	char c = 0;
 	while (1)
 	{
-		printf("ÇëÊäÈë×ø±ê£¨¸ñÊ½£º¡°ĞĞ ÁĞ¡±£¬²åÆìÔÚ×ø±êºó¼ÓÒ»¸ö.£©£º\n");
+		printf("è¯·è¾“å…¥åæ ‡ï¼ˆæ ¼å¼ï¼šâ€œè¡Œ åˆ—â€ï¼Œæ’æ——åœ¨åæ ‡ååŠ ä¸€ä¸ª.ï¼‰ï¼š\n");
 		scanf("%d%d", &i, &j);
 		i = i - 1;
 		j = j - 1;
@@ -190,7 +190,7 @@ int play(char HMF[R][C], char DMF[R][C])//Íæ¼ÒÉ¨À×
 		}
 	}
 }
-int judge(char HMF[R][C], char DMF[R][C])//ÅĞ¶ÏÍê³É
+int judge(char HMF[R][C], char DMF[R][C])//åˆ¤æ–­å®Œæˆ
 {
 	int i = 0, j = 0, a = 0;
 	for (i = 0; i < R; i++)
