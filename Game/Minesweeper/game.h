@@ -1,7 +1,7 @@
 #pragma once
-#define R 10//行数
-#define C 10//列数
-#define M 10//地雷数量
+#define R 10//脨脨脢媒
+#define C 10//脕脨脢媒
+#define M 10//碌脴脌脳脢媒脕驴
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
