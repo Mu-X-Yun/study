@@ -5,8 +5,8 @@ void welcome()
 	int i = 0;
 	printf("/------------------\\\n");
 	printf("|    Minesweeper   |\n");
-	printf("|       É¨À×       |\n");
-	printf("| ÊäÈëÈÎÒâ°´¼ü¿ªÊ¼ |\n");
+	printf("|       æ‰«é›·       |\n");
+	printf("| è¾“å…¥ä»»æ„æŒ‰é”®å¼€å§‹ |\n");
 	printf("\\------------------/\n");
 	scanf("%d", &i);
 	system("cls");
@@ -18,10 +18,10 @@ void menu()
 	while (1)
 	{
 		printf("/------------------------------\\\n");
-		printf("|       ÄãÏëÔÙÀ´Ò»´ÎÂğ£¿       |\n");
-		printf("|      1.ÊÇµÄ      0.²»ÊÇ      |\n");
+		printf("|       ä½ æƒ³å†æ¥ä¸€æ¬¡å—ï¼Ÿ       |\n");
+		printf("|      1.æ˜¯çš„      0.ä¸æ˜¯      |\n");
 		printf("\\------------------------------/\n");
-		printf("ÇëÑ¡Ôñ>");
+		printf("è¯·é€‰æ‹©>");
 		scanf("%d", &i);
 		system("cls");
 		if (i == 1)
@@ -30,7 +30,7 @@ void menu()
 			break;
 		}
 		else if (i == 0)break;
-		else printf("ÇëÊäÈë1»ò0£¡\n");
+		else printf("è¯·è¾“å…¥1æˆ–0ï¼\n");
 	}
 }
 void game()
@@ -52,12 +52,12 @@ void game()
 		{
 			system("cls");
 			print(HMF);
-			printf("²ÈÀ×À²£¡\n");
+			printf("è¸©é›·å•¦ï¼\n");
 			break;
 		}
 		if (judge(HMF, DMF) == 1)
 		{
-			printf("»ñÊ¤À²£¡\n");
+			printf("è·èƒœå•¦ï¼\n");
 			break;
 		}
 	}
