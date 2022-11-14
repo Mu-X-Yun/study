@@ -1,11 +1,11 @@
-//ÕâÊÇÒ»µÀÊµÑéÌâ¡£
-//ÒÔÏÂ³ÌĞòµÄ¹¦ÄÜÎª£ºÍ¨¹ıÊäÈëÄê·İºÍÔÂ·İ£¬ÅĞ¶Ï¸ÃÔÂµÄÌìÊı¡£
+//è¿™æ˜¯ä¸€é“å®éªŒé¢˜ã€‚
+//ä»¥ä¸‹ç¨‹åºçš„åŠŸèƒ½ä¸ºï¼šé€šè¿‡è¾“å…¥å¹´ä»½å’Œæœˆä»½ï¼Œåˆ¤æ–­è¯¥æœˆçš„å¤©æ•°ã€‚
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 void main()
 {
 	int y, m, d;
-	printf("please input year and mounth:");
+	printf("please input year and month:");
 	scanf("%d,%d", &y, &m);
 	switch (m)
 	{
@@ -26,5 +26,5 @@ void main()
 			break;
 	default:printf("INPUT ERROR!");
 	}
-	printf("%dÄê%dÔÂ·İÓĞ%dÌì¡£\n", y, m, d);
+	printf("%då¹´%dæœˆä»½æœ‰%då¤©ã€‚\n", y, m, d);
 }
