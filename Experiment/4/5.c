@@ -1,16 +1,16 @@
-//ÕâÊÇÒ»µÀÊµÑéÌâ¡£
-//±àÐ´³ÌÐò£¬ÊäÈëËÄ¸öÕûÊý£¬°´´Ó´óµ½Ð¡µÄË³ÐòÊä³ö¡£
+//è¿™æ˜¯ä¸€é“å®žéªŒé¢˜ã€‚
+//ç¼–å†™ç¨‹åºï¼Œè¾“å…¥å››ä¸ªæ•´æ•°ï¼ŒæŒ‰ä»Žå¤§åˆ°å°çš„é¡ºåºè¾“å‡ºã€‚
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 int main()
 {
 	int arr[4] = { 0 }, m = 0, n = 0, i = 0, j = 0;
-	printf("ÇëÊäÈëËÄ¸öÊý×Ö£º\n");
+	printf("è¯·è¾“å…¥å››ä¸ªæ•´æ•°ï¼š\n");
 	for (m = 0; m < 4; m++)
 		scanf("%d", &arr[m]);
-	for (n = 0, j = 0; n < 4; n++)
+	for (n = 0; n < 4; n++)
 	{
-		for (m = 0; m < 3; m++)
+		for (m = 0, j = 0; m < 3; m++)
 			if (arr[m] < arr[m + 1])
 			{
 				i = arr[m];
