@@ -1,5 +1,5 @@
-//ÕâÊÇÒ»µÀÊµÑéÌâ¡£
-//±àÐ´³ÌÐò£¬¼ÆËãsum=1+2+3+...+100,²¢Êä³ö½á¹û¡£
+//è¿™æ˜¯ä¸€é“å®žéªŒé¢˜ã€‚
+//ç¼–å†™ç¨‹åºï¼Œè®¡ç®—sum=1+2+3+...+100,å¹¶è¾“å‡ºç»“æžœã€‚
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 int main()
