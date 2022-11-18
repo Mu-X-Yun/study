@@ -1,11 +1,11 @@
-//ÕâÊÇËæ±ãÕÒµÄÒ»µÀÁ·Ï°Ìâ¡£
-//ÊµÏÖÕûÐÍµÄÃ°ÅÝÅÅÐò¡£
+//è¿™æ˜¯éšä¾¿æ‰¾çš„ä¸€é“ç»ƒä¹ é¢˜ã€‚
+//å®žçŽ°æ•´åž‹çš„å†’æ³¡æŽ’åºã€‚
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 int main()
 {
 	int arr[10], i = 0, m = 0, n = 0, count = 0, a = 0;
-	printf("ÇëÊäÈëÊ®¸öÕûÊý£º\n");
+	printf("è¯·è¾“å…¥åä¸ªæ•´æ•°ï¼š\n");
 	for (i = 0; i < 10; i++)
 		scanf("%d", &arr[i]);
 	for (m = 0;m < 10; m++)
