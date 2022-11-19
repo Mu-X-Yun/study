@@ -1,11 +1,11 @@
-//����һ��ʵ���⡣
-//��д���򣬼���n!������������Ҫ��Ӽ���������һ������n�����n��ֵ�Ƚϴ󣬳������δ���������n=100��
+//这是循环结构程序设计一实验题的第二题。
+//编写程序，计算n!，并输出结果。要求从键盘上输入一个整数n，如果n的值比较大，程序该如何处理，比如n=100。
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 int main()
 {
 	double i = 0, n = 0, sum = 1;
-	printf("������n��");
+	printf("请输入n：");
 	scanf("%lf", &n);
 	for (i = 1; i <= n; i++)
 		sum *= i;
