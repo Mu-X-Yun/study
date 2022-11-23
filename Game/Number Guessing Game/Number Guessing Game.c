@@ -1,4 +1,4 @@
-//小游戏：猜数字
+//脨隆脫脦脧路拢潞虏脗脢媒脳脰
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 #include <stdlib.h>
