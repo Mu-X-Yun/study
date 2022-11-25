@@ -1,5 +1,5 @@
-//ÕâÊÇº¯ÊýÊµÑéÌâµÄµÚÒ»Ìâ¡£
-//±à³Ì£¬ÔÚÖ÷º¯ÊýÖÐÊäÈëÁ½¸öÊýa¡¢b£¬È»ºó·Ö±ðÓÃÏàÓ¦º¯ÊýÇóÁ½¸öÊýµÄºÍ¡¢²î¡¢»ý¡¢ÉÌ¡£
+//è¿™æ˜¯å‡½æ•°å®žéªŒé¢˜çš„ç¬¬ä¸€é¢˜ã€‚
+//ç¼–ç¨‹ï¼Œåœ¨ä¸»å‡½æ•°ä¸­è¾“å…¥ä¸¤ä¸ªæ•°aã€bï¼Œç„¶åŽåˆ†åˆ«ç”¨ç›¸åº”å‡½æ•°æ±‚ä¸¤ä¸ªæ•°çš„å’Œã€å·®ã€ç§¯ã€å•†ã€‚
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 int add(int x, int y)
