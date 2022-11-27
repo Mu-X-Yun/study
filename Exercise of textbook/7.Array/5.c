@@ -14,7 +14,7 @@ char* strcat(char* arr1,const char* arr2)
 	while (*arr1++ = *arr2++);
 	return p;
 }
-int strcmp(char* arr1, char* arr2)
+int strcmp(const char* arr1, const char* arr2)
 {
 	int m = 0;
 	assert(arr1 && arr2);
@@ -32,7 +32,7 @@ int strcmp(char* arr1, char* arr2)
 	if (*arr2 == '\0')
 		return 1;
 }
-int strlen(char* arr)
+int strlen(const char* arr)
 {
 	int m = 0;
 	assert(arr);
