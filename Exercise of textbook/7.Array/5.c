@@ -1,40 +1,42 @@
-//ÕâÊÇÄ³½Ì²ÄÏ°ÌâÆßµÄµÚÎåÌâ¡£
-//ÀûÓÃ×Ö·ûÊı×é×÷Îªº¯Êı²ÎÊı£¬ÊµÏÖ×Ö·û´®Ïà¹Øº¯ÊıµÄ¹¦ÄÜ¡£
-//(1)×Ö·û´®Á¬½Óº¯Êıstrcat¡£
-//(2)×Ö·û´®±È½Ïº¯Êıstrcmp¡£
-//(3)×Ö·û´®³¤¶Èº¯Êıstrlen¡£
+//è¿™æ˜¯æŸæ•™æä¹ é¢˜ä¸ƒçš„ç¬¬äº”é¢˜ã€‚
+//åˆ©ç”¨å­—ç¬¦æ•°ç»„ä½œä¸ºå‡½æ•°å‚æ•°ï¼Œå®ç°å­—ç¬¦ä¸²ç›¸å…³å‡½æ•°çš„åŠŸèƒ½ã€‚
+//(1)å­—ç¬¦ä¸²è¿æ¥å‡½æ•°strcatã€‚
+//(2)å­—ç¬¦ä¸²æ¯”è¾ƒå‡½æ•°strcmpã€‚
+//(3)å­—ç¬¦ä¸²é•¿åº¦å‡½æ•°strlenã€‚
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
-char* strcat(char* arr1, char* arr2)
+#include <assert.h>
+char* strcat(char* arr1,const char* arr2)
 {
-	int m = 0, n = 0;
-	for (m = 0; arr1[m] != '\0'; m++);
-	for (n = 0; arr2[n] != '\0'; n++, m++)
-		arr1[m] = arr2[n];
-	arr1[m] == '\0';
-	return arr1;
+	char* p = arr1;
+	assert(arr1 && arr2);//åˆ¤æ–­ä¸¤æ•°ç»„ä¸ä¸ºç©ºå­—ç¬¦
+	while (*++arr1);//å°†arr1æŒ‡é’ˆç§»è‡³\0å¤„
+	while (*arr1++ = *arr2++);
+	return p;
 }
 int strcmp(char* arr1, char* arr2)
 {
 	int m = 0;
-	for (m = 0; arr1[m] != '\0' && arr2[m] != '\0'; m++)
+	assert(arr1 && arr2);
+	while (*arr1++ && *arr2++)
 	{
-		if (arr1[m] > arr2[m])
+		if (*arr1 > *arr2)
 			return 1;
-		if (arr1[m] < arr2[m])
+		if (*arr1 < *arr2)
 			return -1;
 	}
-	if (arr1[m] == '\0' && arr2[m] == '\0')
+	if (*arr1 == 0 && *arr2 == 0)
 		return 0;
-	if (arr1[m] == '\0')
+	if (*arr1 == '\0')
 		return -1;
-	if (arr2[m] == '\0')
+	if (*arr2 == '\0')
 		return 1;
 }
 int strlen(char* arr)
 {
 	int m = 0;
-	for (m = 0; arr[m] != '\0'; m++);
+	assert(arr);
+	for (m = 0; arr[m]; m++);
 	return m;
 }
 int main()
