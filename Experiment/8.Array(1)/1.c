@@ -1,4 +1,4 @@
-//�������飨1��ʵ����ĵ�һ�⡣
+//这是数组（1）实验题的第一题。
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 void main()
