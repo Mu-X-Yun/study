@@ -1,4 +1,4 @@
-//�������飨2��ʵ����ĵ�һ�⡣
+//这是数组（2）实验题的第一题。
 #include <stdio.h>
 void main()
 {
