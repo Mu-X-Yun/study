@@ -1,4 +1,4 @@
-//����ָ��ʵ����ĵ�һ�⡣
+//这是指针实验题的第一题。
 #include <stdio.h>
 void main()
 {
